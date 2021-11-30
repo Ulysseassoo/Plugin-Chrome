@@ -1,0 +1,28 @@
+$background-color: #24272c;
+// $box-shadow: "0 2px 4px 0 #4C5056";
+$text-color: #bac4d3;
+$white: #ffffff;
+$background-second-color: #383a3f;
+html body.white-background {
+	background-color: $background-second-color;
+}
+
+main div .style_color-dark-gray__2xqK_ {
+	color: $white;
+}
+
+main div .styles_selected__hQGhg {
+	background: none;
+}
+
+#__next .style_bg-white__1Kf0r {
+	background-color: $background-color;
+}
+
+#__next .style_color-light-gray__3YboO {
+	color: $text-color;
+}
+
+#__next .styles_hamburger__23zxB > div {
+	background-color: $text-color;
+}
