@@ -63,23 +63,85 @@ main div a.styles_externalLinkIcon__1p0HV svg g {
   stroke: #ffffff;
 }
 
+main div input {
+  color: #24272c;
+}
+
 body div.style_layoutContainer__28zFz main div button.styles_buttonV6__122c5:hover {
   border: 1px solid #d39bff;
 }
 
-#__next .styles_constraintWidth__3mc1j.styles_container__3qkN6 {
+#__next .styles_constraintWidth__3mc1j,
+#__next .styles_mainContainer__2cWSk {
   background-color: #383a3f;
 }
 
-#__next .styles_constraintWidth__3mc1j.styles_container__3qkN6 span {
+#__next .styles_constraintWidth__3mc1j span,
+#__next .styles_constraintWidth__3mc1j div.styles_font__2Nqit,
+#__next .styles_mainContainer__2cWSk span,
+#__next .styles_mainContainer__2cWSk div.styles_font__2Nqit {
   color: #ffffff;
 }
 
-#__next .styles_constraintWidth__3mc1j.styles_container__3qkN6 div.styles_content__2SyXA {
+#__next .styles_constraintWidth__3mc1j div.styles_content__2SyXA,
+#__next .styles_mainContainer__2cWSk div.styles_content__2SyXA {
   background-color: #24272c;
   -webkit-box-shadow: rgba(255, 235, 235, 0.03) 0px 1px 3px 0px, rgba(255, 235, 235, 0.03) 0px 0px 0px 1px;
           box-shadow: rgba(255, 235, 235, 0.03) 0px 1px 3px 0px, rgba(255, 235, 235, 0.03) 0px 0px 0px 1px;
   border: none;
+}
+
+#__next .styles_constraintWidth__3mc1j div.styles_light__1wDke,
+#__next .styles_mainContainer__2cWSk div.styles_light__1wDke {
+  color: #bac4d3;
+}
+
+#__next .styles_constraintWidth__3mc1j p.styles_light__1wDke,
+#__next .styles_mainContainer__2cWSk p.styles_light__1wDke {
+  color: #bac4d3;
+}
+
+#__next .styles_constraintWidth__3mc1j div.styles_format__219oD a,
+#__next .styles_mainContainer__2cWSk div.styles_format__219oD a {
+  color: #d39bff;
+}
+
+#__next .styles_constraintWidth__3mc1j div a.styles_orangeSolidColor__21DFh,
+#__next .styles_mainContainer__2cWSk div a.styles_orangeSolidColor__21DFh {
+  background-color: #d39bff;
+  border: 1px solid #d39bff;
+}
+
+#__next .styles_constraintWidth__3mc1j form button.styles_orangeSolidColor__21DFh,
+#__next .styles_mainContainer__2cWSk form button.styles_orangeSolidColor__21DFh {
+  background-color: #d39bff;
+  background: #d39bff;
+  border: 1px solid #d39bff;
+}
+
+#__next .styles_constraintWidth__3mc1j form button.styles_orangeSolidColor__21DFh:hover,
+#__next .styles_mainContainer__2cWSk form button.styles_orangeSolidColor__21DFh:hover {
+  background-color: #d7a2ff;
+  background: #d7a2ff;
+}
+
+#__next .styles_constraintWidth__3mc1j div.styles_headerActions__2YuMs a.styles_orange__3VieU,
+#__next .styles_mainContainer__2cWSk div.styles_headerActions__2YuMs a.styles_orange__3VieU {
+  color: #d39bff;
+}
+
+#__next .styles_constraintWidth__3mc1j div.styles_headerActions__2YuMs a.styles_grey__3J1TQ,
+#__next .styles_mainContainer__2cWSk div.styles_headerActions__2YuMs a.styles_grey__3J1TQ {
+  color: #bac4d3;
+}
+
+#__next .styles_constraintWidth__3mc1j input,
+#__next .styles_mainContainer__2cWSk input {
+  color: #24272c;
+}
+
+#__next .styles_mainContainer__2cWSk .lazyload-wrapper {
+  overflow: hidden;
 }
 
 #__next div.lazyload-wrapper a.styles_title__Mlj8B {

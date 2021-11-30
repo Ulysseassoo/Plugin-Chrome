@@ -5,6 +5,7 @@ $white: #ffffff;
 $background-second-color: #383a3f;
 $card-color: #616369;
 $accent-color: #d39bff;
+$lighter-accent-color: #d7a2ff;
 $first-gradient: linear-gradient(90deg, rgba(107, 122, 255, 1) 0%, rgba(248, 122, 255, 1) 100%);
 $first-gradient-opacity: linear-gradient(90deg, rgba(107, 122, 255, 0.5) 0%, rgba(248, 122, 255, 0.5) 100%);
 $second-gradient: linear-gradient(128deg, rgba(229, 44, 120, 1) 0%, rgba(22, 46, 195, 1) 50%, rgba(7, 226, 246, 1) 100%);
@@ -73,6 +74,10 @@ main div a.styles_externalLinkIcon__1p0HV {
 	}
 }
 
+main div input {
+	color: $background-color;
+}
+
 body div.style_layoutContainer__28zFz {
 	main div {
 		button.styles_buttonV6__122c5:hover {
@@ -81,15 +86,64 @@ body div.style_layoutContainer__28zFz {
 	}
 }
 
-#__next .styles_constraintWidth__3mc1j.styles_container__3qkN6 {
+#__next .styles_constraintWidth__3mc1j,
+#__next .styles_mainContainer__2cWSk {
 	background-color: $background-second-color;
-	span {
+	span,
+	div.styles_font__2Nqit {
 		color: $white;
 	}
 	div.styles_content__2SyXA {
 		background-color: $background-color;
 		box-shadow: rgba(255, 235, 235, 0.03) 0px 1px 3px 0px, rgba(255, 235, 235, 0.03) 0px 0px 0px 1px;
 		border: none;
+	}
+	div.styles_light__1wDke {
+		color: $text-color;
+	}
+	p.styles_light__1wDke {
+		color: $text-color;
+	}
+	div {
+		&.styles_format__219oD a {
+			color: $accent-color;
+		}
+		a {
+			&.styles_orangeSolidColor__21DFh {
+				background-color: $accent-color;
+				border: 1px solid $accent-color;
+			}
+		}
+	}
+	form {
+		button.styles_orangeSolidColor__21DFh {
+			background-color: $accent-color;
+			background: $accent-color;
+			border: 1px solid $accent-color;
+			&:hover {
+				background-color: $lighter-accent-color;
+				background: $lighter-accent-color;
+			}
+		}
+	}
+	div.styles_headerActions__2YuMs {
+		a {
+			&.styles_orange__3VieU {
+				color: $accent-color;
+			}
+			&.styles_grey__3J1TQ {
+				color: $text-color;
+			}
+		}
+	}
+	input {
+		color: $background-color;
+	}
+}
+
+#__next .styles_mainContainer__2cWSk {
+	.lazyload-wrapper {
+		overflow: hidden;
 	}
 }
 
