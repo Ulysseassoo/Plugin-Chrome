@@ -198,6 +198,11 @@ body div.style_layoutContainer__28zFz main div button.styles_buttonV6__122c5:hov
   color: #bac4d3;
 }
 
+#__next div.styles_constraintWidth__3mc1j.styles_container__2RHCt button.styles_orangeSolidColor__21DFh {
+  background: linear-gradient(128deg, #e52c78 0%, #162ec3 50%, #07e2f6 100%);
+  border: none;
+}
+
 aside div.style_flex__3fKcB a.style_color-dark-gray__2xqK_ {
   color: #ffffff;
 }
