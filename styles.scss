@@ -6,10 +6,12 @@ $background-second-color: #383a3f;
 $card-color: #616369;
 $accent-color: #d39bff;
 $first-gradient: linear-gradient(90deg, rgba(107, 122, 255, 1) 0%, rgba(248, 122, 255, 1) 100%);
+$first-gradient-opacity: linear-gradient(90deg, rgba(107, 122, 255, 0.5) 0%, rgba(248, 122, 255, 0.5) 100%);
 $second-gradient: linear-gradient(128deg, rgba(229, 44, 120, 1) 0%, rgba(22, 46, 195, 1) 50%, rgba(7, 226, 246, 1) 100%);
 
 // BODY
-html body.white-background {
+html body.white-background,
+html body {
 	background-color: $background-second-color;
 }
 
@@ -30,18 +32,164 @@ main div .styles_item__t3KS1 {
 	padding: 0.2rem;
 	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 	border-radius: 0.4rem;
+	transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+	&:hover {
+		background: $first-gradient-opacity;
+	}
+}
+
+main div.styles_item__1uFx1 {
+	@media screen and (min-width: 768px) {
+		background-color: $card-color;
+		background-image: none;
+		padding: 0.2rem;
+		box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+		border-radius: 0.4rem;
+		transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+		&:hover {
+			background: $first-gradient-opacity;
+		}
+	}
+	button[data-test="follow-button"]:hover {
+		border-color: $accent-color;
+	}
+}
+
+main div button.styles_feed__rBj4Q:not(:disabled):focus,
+.styles_feed__rBj4Q:not(:disabled):hover {
+	border-color: $white;
+}
+
+main div a.styles_externalLinkIcon__1p0HV {
+	svg {
+		&:hover {
+			g {
+				stroke: $accent-color;
+			}
+		}
+		g {
+			stroke: $white;
+		}
+	}
+}
+
+body div.style_layoutContainer__28zFz {
+	main div {
+		button.styles_buttonV6__122c5:hover {
+			border: 1px solid $accent-color;
+		}
+	}
+}
+
+#__next .styles_constraintWidth__3mc1j.styles_container__3qkN6 {
+	background-color: $background-second-color;
+	span {
+		color: $white;
+	}
+	div.styles_content__2SyXA {
+		background-color: $background-color;
+		box-shadow: rgba(255, 235, 235, 0.03) 0px 1px 3px 0px, rgba(255, 235, 235, 0.03) 0px 0px 0px 1px;
+		border: none;
+	}
+}
+
+#__next div.lazyload-wrapper {
+	a.styles_title__Mlj8B {
+		color: $accent-color;
+	}
+	a.styles_day__28oPM {
+		color: $text-color;
+	}
+}
+// ASIDE
+
+aside div.style_flex__3fKcB {
+	a {
+		&.style_color-dark-gray__2xqK_ {
+			color: $white;
+		}
+	}
+}
+
+aside div.style_color-dark-gray__2xqK_ {
+	color: $white;
+	& > span.style_color-blue__2u-D7 {
+		color: $accent-color;
+	}
+}
+
+aside div.style_px-2__vyGns {
+	background: $first-gradient;
+}
+
+aside button[data-test="newsletter-subscribe-button"] {
+	background-color: $accent-color;
+	&.styles_primary__3PAAX {
+		&::after {
+			background: $first-gradient;
+		}
+	}
+	&:hover {
+		background: $white;
+	}
+}
+
+aside div a.styles_line__2cOm7:not(:disabled):focus,
+.styles_line__2cOm7:not(:disabled):hover {
+	border-color: $white;
+}
+
+aside ul li.styles_item__3kBzS,
+aside div.styles_copyright__1lzac {
+	color: $white;
 }
 
 // HEADER
 #__next .style_bg-white__1Kf0r {
 	background-color: $background-color;
 	box-shadow: 0 0 1px 1px rgba(245, 248, 255, 0.1);
+	&.styles_button__Jp_rd {
+		&:hover {
+			border: 1px solid $accent-color;
+		}
+	}
 }
 
 #__next .style_color-light-gray__3YboO {
 	color: $text-color;
 }
 
+#__next .style_color-orange__14aO0 {
+	color: $accent-color;
+}
+
 #__next .styles_hamburger__23zxB > div {
 	background-color: $text-color;
+}
+#__next .styles_header__2LI5z a svg {
+	g {
+		path:first-child {
+			fill: $accent-color;
+		}
+	}
+}
+
+#__next header {
+	h1.style_color-dark-gray__2xqK_,
+	div.style_color-dark-gray__2xqK_,
+	p {
+		color: $white;
+	}
+}
+
+button[data-test="login-button"] {
+	background-color: $accent-color;
+	&.styles_primary__3PAAX {
+		&::after {
+			background: $first-gradient;
+		}
+	}
+	&:hover {
+		background: $white;
+	}
 }
