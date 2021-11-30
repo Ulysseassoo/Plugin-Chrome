@@ -10,8 +10,20 @@ main div .styles_selected__hQGhg {
   background: none;
 }
 
+main div .styles_item__1QTTj,
+main div .styles_item__t3KS1 {
+  background-color: #616369;
+  background-image: none;
+  padding: 0.2rem;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 0.4rem;
+}
+
 #__next .style_bg-white__1Kf0r {
   background-color: #24272c;
+  -webkit-box-shadow: 0 0 1px 1px rgba(245, 248, 255, 0.1);
+          box-shadow: 0 0 1px 1px rgba(245, 248, 255, 0.1);
 }
 
 #__next .style_color-light-gray__3YboO {

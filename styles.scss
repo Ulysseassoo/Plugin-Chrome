@@ -3,9 +3,17 @@ $background-color: #24272c;
 $text-color: #bac4d3;
 $white: #ffffff;
 $background-second-color: #383a3f;
+$card-color: #616369;
+$accent-color: #d39bff;
+$first-gradient: linear-gradient(90deg, rgba(107, 122, 255, 1) 0%, rgba(248, 122, 255, 1) 100%);
+$second-gradient: linear-gradient(128deg, rgba(229, 44, 120, 1) 0%, rgba(22, 46, 195, 1) 50%, rgba(7, 226, 246, 1) 100%);
+
+// BODY
 html body.white-background {
 	background-color: $background-second-color;
 }
+
+// MAIN
 
 main div .style_color-dark-gray__2xqK_ {
 	color: $white;
@@ -15,8 +23,19 @@ main div .styles_selected__hQGhg {
 	background: none;
 }
 
+main div .styles_item__1QTTj,
+main div .styles_item__t3KS1 {
+	background-color: $card-color;
+	background-image: none;
+	padding: 0.2rem;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	border-radius: 0.4rem;
+}
+
+// HEADER
 #__next .style_bg-white__1Kf0r {
 	background-color: $background-color;
+	box-shadow: 0 0 1px 1px rgba(245, 248, 255, 0.1);
 }
 
 #__next .style_color-light-gray__3YboO {
