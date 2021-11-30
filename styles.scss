@@ -9,6 +9,7 @@ $lighter-accent-color: #d7a2ff;
 $first-gradient: linear-gradient(90deg, rgba(107, 122, 255, 1) 0%, rgba(248, 122, 255, 1) 100%);
 $first-gradient-opacity: linear-gradient(90deg, rgba(107, 122, 255, 0.5) 0%, rgba(248, 122, 255, 0.5) 100%);
 $second-gradient: linear-gradient(128deg, rgba(229, 44, 120, 1) 0%, rgba(22, 46, 195, 1) 50%, rgba(7, 226, 246, 1) 100%);
+$background-color-image-button: #d39bff;
 
 // BODY
 html body.white-background,
@@ -301,4 +302,98 @@ button[data-test="login-button"] {
 	&:hover {
 		background: $white;
 	}
+}
+#__next .styles_hamburger__23zxB > div {
+	background-color: $text-color;
+}
+
+body .header,
+.avatar__image-extra {
+	background-color: $background-color;
+	margin-bottom: 0px;
+}
+
+header .header__logo img {
+	background-color: $background-color-image-button;
+	padding: 10px;
+}
+
+body .container {
+	background-color: $background-second-color;
+}
+
+div .link__arrow a {
+	color: $white;
+}
+
+div .link__arrow {
+	color: $white;
+}
+
+div .paper .c__primary {
+	color: $background-color-image-button;
+}
+
+header div.container.header__container.o__ltr {
+	background-color: $background-color;
+}
+
+div .t__no-und.paper.paper__article-preview {
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: #314056;
+}
+
+body footer.footer {
+	background-color: $background-second-color;
+	margin-top: 0px;
+}
+
+div .collection__headline,
+.paper__stack.animation__clicked {
+	background-color: #596386;
+}
+
+div .c__darker {
+	color: $white;
+}
+
+div .g__space a {
+	margin-top: 0px;
+	background-color: #596386;
+	padding-bottom: 10px;
+}
+
+div .section__bg {
+	padding-bottom: 0px;
+}
+
+#__next .styles_whiteRow__26wVY {
+	background-color: $background-second-color;
+}
+
+#__next .styles_padding-xLarge__rIklV {
+	background-color: $background-second-color;
+}
+
+#__next .styles_lineHeight__2RYYy.styles_medium__3fSwd {
+	color: $white;
+}
+
+#__next .styles_orangeSolidColor__21DFh {
+	background-color: $background-color-image-button;
+	border: 0px;
+}
+
+#__next .styles_simpleVariant__1SJ3a {
+	background-color: $background-color-image-button;
+	border: 0px;
+}
+
+#__next .styles_lineHeight__2RYYy.styles_xLarge__24CcJ {
+	color: $white;
+}
+
+#__next .styles_lineHeight__2RYYy.styles_small__2bw6M {
+	color: $white;
 }

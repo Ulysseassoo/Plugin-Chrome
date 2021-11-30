@@ -1,15 +1,21 @@
 {
 	"manifest_version": 2,
-
 	"name": "PH DarkMode",
 	"version": "0.1.0",
 	"description": "A plugin to turn the website Product Hunt in darkmode",
-
 	"content_scripts": [
 		{
-			"css": ["styles.css"],
-			"js": ["script.js"],
-			"matches": ["https://www.producthunt.com/*"]
+			"css": [
+				"styles.css"
+			],
+			"js": [
+				"script.js"
+			],
+			"matches": [
+				"https://www.producthunt.com/*",
+				"https://help.producthunt.com/en/*",
+				"https://www.producthunt.com/sponsor?utm_content=sf/*"
+			]
 		}
 	]
 }
