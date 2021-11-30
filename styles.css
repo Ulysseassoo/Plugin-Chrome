@@ -152,6 +152,52 @@ body div.style_layoutContainer__28zFz main div button.styles_buttonV6__122c5:hov
   color: #bac4d3;
 }
 
+#__next div.styles_heroBgTablet__1Gu3w {
+  background: url(https://ph-static.imgix.net/static/photo-matrix-2x.png) no-repeat 400% #383a3f;
+}
+
+#__next div.styles_heroBgTablet__1Gu3w h1 {
+  color: #ffffff;
+}
+
+#__next div.styles_heroBgTablet__1Gu3w p {
+  color: #bac4d3;
+}
+
+#__next div.styles_heroBgDesktop__2sXwq {
+  background: url(https://ph-static.imgix.net/static/photo-matrix-2x.png) no-repeat 50% #383a3f;
+}
+
+#__next div.styles_heroBgDesktop__2sXwq h1 {
+  color: #ffffff;
+}
+
+#__next div.styles_heroBgDesktop__2sXwq p {
+  color: #bac4d3;
+}
+
+#__next div.style_layoutContainer__28zFz div.styles_desktopContent__yLBKQ button.styles_button__Jp_rd {
+  background-color: #d39bff;
+}
+
+#__next div.style_layoutContainer__28zFz div.styles_desktopContent__yLBKQ button.styles_button__Jp_rd.styles_primary__3PAAX::after {
+  background: -webkit-gradient(linear, left top, right top, from(#6b7aff), to(#f87aff));
+  background: linear-gradient(90deg, #6b7aff 0%, #f87aff 100%);
+}
+
+#__next div.style_layoutContainer__28zFz div.styles_desktopContent__yLBKQ button.styles_button__Jp_rd:hover {
+  background: #ffffff;
+}
+
+#__next div div.style_fontSize-24__1Kg2n,
+#__next div a.style_fontSize-32__2t_bf {
+  color: #ffffff;
+}
+
+#__next div .style_color-dark-gray__2xqK_ {
+  color: #bac4d3;
+}
+
 aside div.style_flex__3fKcB a.style_color-dark-gray__2xqK_ {
   color: #ffffff;
 }
@@ -214,7 +260,8 @@ aside div.styles_copyright__1lzac {
   background-color: #bac4d3;
 }
 
-#__next .styles_header__2LI5z a svg g path:first-child {
+#__next .styles_header__2LI5z a svg g path:first-child,
+#__next .styles_header__1ZF6R a svg g path:first-child {
   fill: #d39bff;
 }
 

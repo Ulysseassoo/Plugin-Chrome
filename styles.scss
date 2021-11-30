@@ -155,6 +155,53 @@ body div.style_layoutContainer__28zFz {
 		color: $text-color;
 	}
 }
+
+#__next div {
+	&.styles_heroBgTablet__1Gu3w {
+		background: url(https://ph-static.imgix.net/static/photo-matrix-2x.png) no-repeat 400% $background-second-color;
+		h1 {
+			color: $white;
+		}
+		p {
+			color: $text-color;
+		}
+	}
+	&.styles_heroBgDesktop__2sXwq {
+		background: url(https://ph-static.imgix.net/static/photo-matrix-2x.png) no-repeat 50% $background-second-color;
+		h1 {
+			color: $white;
+		}
+		p {
+			color: $text-color;
+		}
+	}
+}
+
+#__next div.style_layoutContainer__28zFz {
+	div.styles_desktopContent__yLBKQ {
+		button.styles_button__Jp_rd {
+			background-color: $accent-color;
+			&.styles_primary__3PAAX {
+				&::after {
+					background: $first-gradient;
+				}
+			}
+			&:hover {
+				background: $white;
+			}
+		}
+	}
+}
+
+#__next div {
+	div.style_fontSize-24__1Kg2n,
+	a.style_fontSize-32__2t_bf {
+		color: $white;
+	}
+	.style_color-dark-gray__2xqK_ {
+		color: $text-color;
+	}
+}
 // ASIDE
 
 aside div.style_flex__3fKcB {
@@ -220,7 +267,8 @@ aside div.styles_copyright__1lzac {
 #__next .styles_hamburger__23zxB > div {
 	background-color: $text-color;
 }
-#__next .styles_header__2LI5z a svg {
+#__next .styles_header__2LI5z a svg,
+#__next .styles_header__1ZF6R a svg {
 	g {
 		path:first-child {
 			fill: $accent-color;
