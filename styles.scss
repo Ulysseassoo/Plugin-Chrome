@@ -441,3 +441,19 @@ body.darkmode div .section__bg {
 #__next.darkmode .styles_lineHeight__2RYYy.styles_small__2bw6M {
 	color: $white;
 }
+
+#__next.darkmode .styles_container__1oevE .p-apps--col-2:first-child {
+	background-color: $background-second-color;
+}
+
+#__next.darkmode .styles_container__1oevE .p-apps--col-2 h2 {
+	color: $white;
+}
+
+#__next .darkmode.styles_container__1oevE .p-apps--col-2 {
+	background-color: $background-second-color;
+}
+
+// #__next .styles_container__1oevE .p-apps--col-1 {
+// 	background-color: $background-second-color;
+// }
