@@ -249,43 +249,43 @@ body.darkmode div.style_layoutContainer__28zFz main div button.styles_buttonV6__
   border: none;
 }
 
-aside div.style_flex__3fKcB a.style_color-dark-gray__2xqK_ {
+body.darkmode aside div.style_flex__3fKcB a.style_color-dark-gray__2xqK_ {
   color: #ffffff;
 }
 
-aside div.style_color-dark-gray__2xqK_ {
+body.darkmode aside div.style_color-dark-gray__2xqK_ {
   color: #ffffff;
 }
 
-aside div.style_color-dark-gray__2xqK_ > span.style_color-blue__2u-D7 {
+body.darkmode aside div.style_color-dark-gray__2xqK_ > span.style_color-blue__2u-D7 {
   color: #d39bff;
 }
 
-aside div.style_px-2__vyGns {
+body.darkmode aside div.style_px-2__vyGns {
   background: -webkit-gradient(linear, left top, right top, from(#6b7aff), to(#f87aff));
   background: linear-gradient(90deg, #6b7aff 0%, #f87aff 100%);
 }
 
-aside button[data-test="newsletter-subscribe-button"] {
+body.darkmode aside button[data-test="newsletter-subscribe-button"] {
   background-color: #d39bff;
 }
 
-aside button[data-test="newsletter-subscribe-button"].styles_primary__3PAAX::after {
+body.darkmode aside button[data-test="newsletter-subscribe-button"].styles_primary__3PAAX::after {
   background: -webkit-gradient(linear, left top, right top, from(#6b7aff), to(#f87aff));
   background: linear-gradient(90deg, #6b7aff 0%, #f87aff 100%);
 }
 
-aside button[data-test="newsletter-subscribe-button"]:hover {
+body.darkmode aside button[data-test="newsletter-subscribe-button"]:hover {
   background: #ffffff;
 }
 
-aside div a.styles_line__2cOm7:not(:disabled):focus,
+body.darkmode aside div a.styles_line__2cOm7:not(:disabled):focus,
 .styles_line__2cOm7:not(:disabled):hover {
   border-color: #ffffff;
 }
 
-aside ul li.styles_item__3kBzS,
-aside div.styles_copyright__1lzac {
+body.darkmode aside ul li.styles_item__3kBzS,
+body.darkmode aside div.styles_copyright__1lzac {
   color: #ffffff;
 }
 
@@ -322,16 +322,16 @@ aside div.styles_copyright__1lzac {
   color: #ffffff;
 }
 
-button[data-test="login-button"] {
+body.darkmode button[data-test="login-button"] {
   background-color: #d39bff;
 }
 
-button[data-test="login-button"].styles_primary__3PAAX::after {
+body.darkmode button[data-test="login-button"].styles_primary__3PAAX::after {
   background: -webkit-gradient(linear, left top, right top, from(#6b7aff), to(#f87aff));
   background: linear-gradient(90deg, #6b7aff 0%, #f87aff 100%);
 }
 
-button[data-test="login-button"]:hover {
+body.darkmode button[data-test="login-button"]:hover {
   background: #ffffff;
 }
 

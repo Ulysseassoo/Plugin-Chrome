@@ -256,7 +256,7 @@ body.darkmode div.style_layoutContainer__28zFz {
 }
 // ASIDE
 
-aside div.style_flex__3fKcB {
+body.darkmode aside div.style_flex__3fKcB {
 	a {
 		&.style_color-dark-gray__2xqK_ {
 			color: $white;
@@ -264,18 +264,18 @@ aside div.style_flex__3fKcB {
 	}
 }
 
-aside div.style_color-dark-gray__2xqK_ {
+body.darkmode aside div.style_color-dark-gray__2xqK_ {
 	color: $white;
 	& > span.style_color-blue__2u-D7 {
 		color: $accent-color;
 	}
 }
 
-aside div.style_px-2__vyGns {
+body.darkmode aside div.style_px-2__vyGns {
 	background: $first-gradient;
 }
 
-aside button[data-test="newsletter-subscribe-button"] {
+body.darkmode aside button[data-test="newsletter-subscribe-button"] {
 	background-color: $accent-color;
 	&.styles_primary__3PAAX {
 		&::after {
@@ -287,13 +287,13 @@ aside button[data-test="newsletter-subscribe-button"] {
 	}
 }
 
-aside div a.styles_line__2cOm7:not(:disabled):focus,
+body.darkmode aside div a.styles_line__2cOm7:not(:disabled):focus,
 .styles_line__2cOm7:not(:disabled):hover {
 	border-color: $white;
 }
 
-aside ul li.styles_item__3kBzS,
-aside div.styles_copyright__1lzac {
+body.darkmode aside ul li.styles_item__3kBzS,
+body.darkmode aside div.styles_copyright__1lzac {
 	color: $white;
 }
 
@@ -336,7 +336,7 @@ aside div.styles_copyright__1lzac {
 	}
 }
 
-button[data-test="login-button"] {
+body.darkmode button[data-test="login-button"] {
 	background-color: $accent-color;
 	&.styles_primary__3PAAX {
 		&::after {
@@ -453,7 +453,3 @@ body.darkmode div .section__bg {
 #__next .darkmode.styles_container__1oevE .p-apps--col-2 {
 	background-color: $background-second-color;
 }
-
-// #__next .styles_container__1oevE .p-apps--col-1 {
-// 	background-color: $background-second-color;
-// }

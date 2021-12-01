@@ -1,4 +1,5 @@
 let navbar = document.querySelector("#__next > div.styles_header__2LI5z")
+let navbarTablet = document.querySelector("#__next > div.styles_header__1ZF6R")
 let nextDiv = document.querySelector("#__next")
 let body = document.querySelector("body")
 
@@ -9,6 +10,7 @@ const toggle = `
         </label>
     `
 const div = document.createElement("div")
+div.style.margin = "1rem"
 div.innerHTML += toggle
 console.log(div.childNodes[1])
 div.childNodes[1].addEventListener("change", (e) => {
@@ -20,4 +22,8 @@ div.childNodes[1].addEventListener("change", (e) => {
 	}
 })
 
-navbar.appendChild(div)
+if (window.matchMedia("(max-width: 1099px)").matches) {
+	navbarTablet.appendChild(div)
+} else {
+	navbar.appendChild(div)
+}
