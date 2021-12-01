@@ -11,24 +11,68 @@ $first-gradient-opacity: linear-gradient(90deg, rgba(107, 122, 255, 0.5) 0%, rgb
 $second-gradient: linear-gradient(128deg, rgba(229, 44, 120, 1) 0%, rgba(22, 46, 195, 1) 50%, rgba(7, 226, 246, 1) 100%);
 $background-color-image-button: #d39bff;
 
+// TOGGLE DARKMODE
+.label.toggle {
+	display: flex;
+
+	/* Rounded border */
+	border-radius: 9999px;
+
+	/* Size */
+	height: 16px;
+	width: 32px;
+
+	/* OFF status */
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.3);
+
+	/* Push the circle to the right */
+	justify-content: flex-end;
+
+	.label__circle {
+		/* Rounded border */
+		border-radius: 9999px;
+
+		/* Size */
+		width: 16px;
+
+		background-color: #fff;
+
+		/* OFF status */
+		border: 1px solid rgba(0, 0, 0, 0.3);
+		transition: 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+	transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.label__input {
+	/* Hide the input */
+	display: none;
+	/* ON status */
+	&:checked ~ .label.toggle {
+		background-color: #357edd;
+		border: 1px solid #357edd;
+		justify-content: space-between;
+	}
+}
+
 // BODY
-html body.white-background,
-html body {
+html body.white-background.darkmode,
+html body.darkmode {
 	background-color: $background-second-color;
 }
 
 // MAIN
 
-main div .style_color-dark-gray__2xqK_ {
+body.darkmode main div .style_color-dark-gray__2xqK_ {
 	color: $white;
 }
 
-main div .styles_selected__hQGhg {
+body.darkmode main div .styles_selected__hQGhg {
 	background: none;
 }
 
-main div .styles_item__1QTTj,
-main div .styles_item__t3KS1 {
+body.darkmode main div .styles_item__1QTTj,
+body.darkmode main div .styles_item__t3KS1 {
 	background-color: $card-color;
 	background-image: none;
 	padding: 0.2rem;
@@ -40,7 +84,7 @@ main div .styles_item__t3KS1 {
 	}
 }
 
-main div.styles_item__1uFx1 {
+body.darkmode main div.styles_item__1uFx1 {
 	@media screen and (min-width: 768px) {
 		background-color: $card-color;
 		background-image: none;
@@ -57,12 +101,12 @@ main div.styles_item__1uFx1 {
 	}
 }
 
-main div button.styles_feed__rBj4Q:not(:disabled):focus,
+body.darkmode main div button.styles_feed__rBj4Q:not(:disabled):focus,
 .styles_feed__rBj4Q:not(:disabled):hover {
 	border-color: $white;
 }
 
-main div a.styles_externalLinkIcon__1p0HV {
+body.darkmode main div a.styles_externalLinkIcon__1p0HV {
 	svg {
 		&:hover {
 			g {
@@ -75,11 +119,11 @@ main div a.styles_externalLinkIcon__1p0HV {
 	}
 }
 
-main div input {
+body.darkmode main div input {
 	color: $background-color;
 }
 
-body div.style_layoutContainer__28zFz {
+body.darkmode div.style_layoutContainer__28zFz {
 	main div {
 		button.styles_buttonV6__122c5:hover {
 			border: 1px solid $accent-color;
@@ -87,8 +131,8 @@ body div.style_layoutContainer__28zFz {
 	}
 }
 
-#__next .styles_constraintWidth__3mc1j,
-#__next .styles_mainContainer__2cWSk {
+#__next.darkmode .styles_constraintWidth__3mc1j,
+#__next.darkmode .styles_mainContainer__2cWSk {
 	background-color: $background-second-color;
 	span,
 	div.styles_font__2Nqit {
@@ -142,13 +186,13 @@ body div.style_layoutContainer__28zFz {
 	}
 }
 
-#__next .styles_mainContainer__2cWSk {
+#__next.darkmode .styles_mainContainer__2cWSk {
 	.lazyload-wrapper {
 		overflow: hidden;
 	}
 }
 
-#__next div.lazyload-wrapper {
+#__next.darkmode div.lazyload-wrapper {
 	a.styles_title__Mlj8B {
 		color: $accent-color;
 	}
@@ -157,7 +201,7 @@ body div.style_layoutContainer__28zFz {
 	}
 }
 
-#__next div {
+#__next.darkmode div {
 	&.styles_heroBgTablet__1Gu3w {
 		background: url(https://ph-static.imgix.net/static/photo-matrix-2x.png) no-repeat 400% $background-second-color;
 		h1 {
@@ -178,7 +222,7 @@ body div.style_layoutContainer__28zFz {
 	}
 }
 
-#__next div.style_layoutContainer__28zFz {
+#__next.darkmode div.style_layoutContainer__28zFz {
 	div.styles_desktopContent__yLBKQ {
 		button.styles_button__Jp_rd {
 			background-color: $accent-color;
@@ -194,7 +238,7 @@ body div.style_layoutContainer__28zFz {
 	}
 }
 
-#__next div {
+#__next.darkmode div {
 	div.style_fontSize-24__1Kg2n,
 	a.style_fontSize-32__2t_bf {
 		color: $white;
@@ -204,7 +248,7 @@ body div.style_layoutContainer__28zFz {
 	}
 }
 
-#__next div.styles_constraintWidth__3mc1j.styles_container__2RHCt {
+#__next.darkmode div.styles_constraintWidth__3mc1j.styles_container__2RHCt {
 	button.styles_orangeSolidColor__21DFh {
 		background: $second-gradient;
 		border: none;
@@ -254,7 +298,7 @@ aside div.styles_copyright__1lzac {
 }
 
 // HEADER
-#__next .style_bg-white__1Kf0r {
+#__next.darkmode .style_bg-white__1Kf0r {
 	background-color: $background-color;
 	box-shadow: 0 0 1px 1px rgba(245, 248, 255, 0.1);
 	&.styles_button__Jp_rd {
@@ -264,19 +308,19 @@ aside div.styles_copyright__1lzac {
 	}
 }
 
-#__next .style_color-light-gray__3YboO {
+#__next.darkmode .style_color-light-gray__3YboO {
 	color: $text-color;
 }
 
-#__next .style_color-orange__14aO0 {
+#__next.darkmode .style_color-orange__14aO0 {
 	color: $accent-color;
 }
 
-#__next .styles_hamburger__23zxB > div {
+#__next.darkmode .styles_hamburger__23zxB > div {
 	background-color: $text-color;
 }
-#__next .styles_header__2LI5z a svg,
-#__next .styles_header__1ZF6R a svg {
+#__next.darkmode .styles_header__2LI5z a svg,
+#__next.darkmode .styles_header__1ZF6R a svg {
 	g {
 		path:first-child {
 			fill: $accent-color;
@@ -284,7 +328,7 @@ aside div.styles_copyright__1lzac {
 	}
 }
 
-#__next header {
+#__next.darkmode header {
 	h1.style_color-dark-gray__2xqK_,
 	div.style_color-dark-gray__2xqK_,
 	p {
@@ -303,97 +347,97 @@ button[data-test="login-button"] {
 		background: $white;
 	}
 }
-#__next .styles_hamburger__23zxB > div {
+#__next.darkmode .styles_hamburger__23zxB > div {
 	background-color: $text-color;
 }
 
-body .header,
+body.darkmode .header,
 .avatar__image-extra {
 	background-color: $background-color;
 	margin-bottom: 0px;
 }
 
-header .header__logo img {
+body.darkmode header .header__logo img {
 	background-color: $background-color-image-button;
 	padding: 10px;
 }
 
-body .container {
+body.darkmode .container {
 	background-color: $background-second-color;
 }
 
-div .link__arrow a {
+body.darkmode div .link__arrow a {
 	color: $white;
 }
 
-div .link__arrow {
+body.darkmode div .link__arrow {
 	color: $white;
 }
 
-div .paper .c__primary {
+body.darkmode div .paper .c__primary {
 	color: $background-color-image-button;
 }
 
-header div.container.header__container.o__ltr {
+body.darkmode header div.container.header__container.o__ltr {
 	background-color: $background-color;
 }
 
-div .t__no-und.paper.paper__article-preview {
+body.darkmode div .t__no-und.paper.paper__article-preview {
 	margin-bottom: 10px;
 	border-radius: 10px;
 	background-color: #314056;
 }
 
-body footer.footer {
+body.darkmode footer.footer {
 	background-color: $background-second-color;
 	margin-top: 0px;
 }
 
-div .collection__headline,
+body.darkmode div .collection__headline,
 .paper__stack.animation__clicked {
 	background-color: #596386;
 }
 
-div .c__darker {
+body.darkmode div .c__darker {
 	color: $white;
 }
 
-div .g__space a {
+body.darkmode div .g__space a {
 	margin-top: 0px;
 	background-color: #596386;
 	padding-bottom: 10px;
 }
 
-div .section__bg {
+body.darkmode div .section__bg {
 	padding-bottom: 0px;
 }
 
-#__next .styles_whiteRow__26wVY {
+#__next.darkmode .styles_whiteRow__26wVY {
 	background-color: $background-second-color;
 }
 
-#__next .styles_padding-xLarge__rIklV {
+#__next.darkmode .styles_padding-xLarge__rIklV {
 	background-color: $background-second-color;
 }
 
-#__next .styles_lineHeight__2RYYy.styles_medium__3fSwd {
+#__next.darkmode .styles_lineHeight__2RYYy.styles_medium__3fSwd {
 	color: $white;
 }
 
-#__next .styles_orangeSolidColor__21DFh {
+#__next.darkmode .styles_orangeSolidColor__21DFh {
 	background-color: $background-color-image-button;
 	border: 0px;
 }
 
-#__next .styles_simpleVariant__1SJ3a {
+#__next.darkmode .styles_simpleVariant__1SJ3a {
 	background-color: $background-color-image-button;
 	border: 0px;
 }
 
-#__next .styles_lineHeight__2RYYy.styles_xLarge__24CcJ {
+#__next.darkmode .styles_lineHeight__2RYYy.styles_xLarge__24CcJ {
 	color: $white;
 }
 
-#__next .styles_lineHeight__2RYYy.styles_small__2bw6M {
+#__next.darkmode .styles_lineHeight__2RYYy.styles_small__2bw6M {
 	color: $white;
 }
