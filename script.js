@@ -45,6 +45,13 @@ input.addEventListener("change", (e) => {
 	Array.from(body.getElementsByTagName("video")).forEach((element) => {
 		element.style.display = ""
 	})
+	Array.from(body.getElementsByTagName("a")).forEach((element) => {
+		if (body.classList.contains("darkmode")) {
+			element.style.color = "#d39bff"
+		} else {
+			element.style.color = "black"
+		}
+	})
 	if (footer) {
 		footer.style.display = "flex"
 	}
@@ -59,6 +66,13 @@ input.addEventListener("change", (e) => {
 		})
 		Array.from(body.getElementsByTagName("img")).forEach((element) => {
 			element.style.display = "none"
+		})
+		Array.from(body.getElementsByTagName("a")).forEach((element) => {
+			if (body.classList.contains("darkmode")) {
+				element.style.color = "white"
+			} else {
+				element.style.color = "black"
+			}
 		})
 		Array.from(body.getElementsByTagName("video")).forEach((element) => {
 			element.style.display = "none"
