@@ -49,13 +49,23 @@ $background-color-image-button: #d39bff;
 	display: none;
 	/* ON status */
 	&:checked ~ .label.toggle {
-		background-color: #357edd;
-		border: 1px solid #357edd;
+		background-color: $accent-color;
+		border: 1px solid $accent-color;
 		justify-content: space-between;
 	}
 }
 
+// Button Easy reading
+#button-easy {
+	position: fixed;
+	top: 200px;
+	right: 10px;
+}
+
 // BODY
+body {
+	transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
 html body.white-background.darkmode,
 html body.darkmode {
 	background-color: $background-second-color;
@@ -254,6 +264,42 @@ body.darkmode div.style_layoutContainer__28zFz {
 		border: none;
 	}
 }
+
+#__next.darkmode div.styles_about__3c0Zy {
+	h2 {
+		color: $accent-color;
+	}
+}
+
+#__next.darkmode section .styles_publicationsList__lVAfh {
+	li {
+		p {
+			color: $text-color;
+		}
+	}
+}
+
+// MODAL
+
+div[data-test="modal"] {
+	.styles_contentBackground__WWkDC {
+		background: $background-color;
+		.styles_login__2tm6p {
+			background: $background-second-color;
+			h1 {
+				color: $white;
+			}
+		}
+		p {
+			color: $text-color;
+		}
+		button {
+			background: #212121;
+			color: white;
+		}
+	}
+}
+
 // ASIDE
 
 body.darkmode aside div.style_flex__3fKcB {
